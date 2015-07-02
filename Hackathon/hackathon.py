@@ -59,7 +59,8 @@ def hello_world_app(environ, start_response):
           
         except Exception as e:
             message += "<br><font color=red>Please input completely!</font>"                
-    message += "<br/><h1>People in the GYM!</h1><br/>"                
+    message += "<br/><h1>People in the GYM!</h1><br/>"
+    message += '''<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Yoga_Class_at_a_Gym.JPG" alt="Gym" style="width:304px;height:228px;">'''
     message += "<h1>Welcome to the GYM! Please register here for participation!</h1>"
     message += "<form method='POST'><br>StudentName:<input type=text name='studentname'>"
     message += "<br><br>StudentID:<input type=text name='studentid'>"
